@@ -5,7 +5,7 @@ import prof from '../images/profile_2.jpg'
 const SideBar = ()=>{
     return (
         <>
-            <Figure>
+            <Figure className="text-center" style={{width: "100%"}}>
                 <Figure.Image
                     src={prof} id="profImage" roundedCircle
                 />
@@ -13,7 +13,7 @@ const SideBar = ()=>{
                     John Smith<br/> John@gmail.com
                 </Figure.Caption>
             </Figure>
-            <Nav defaultActiveKey="/home" className="flex-column">
+            <Nav defaultActiveKey="/home" className="flex-column text-center ">
                 <Nav.Link href="/home" className="text-light"><HouseFill /> Dashboard</Nav.Link>
                 <Nav.Link eventKey="link-1" className="text-light">Products</Nav.Link>
                 <Nav.Link eventKey="link-2" className="text-light">Sales</Nav.Link>
