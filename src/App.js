@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css'
 import { useState } from 'react';
+import { Route, Switch } from 'react-router';
 import { Col, Container, Row, Button, Offcanvas } from "react-bootstrap";
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import SiteFooter from './components/Footer';
+import Dashboard from './pages/Dashboard';
 
 function App() {
 	const [show, setShow] = useState(false);
@@ -14,7 +16,7 @@ function App() {
   return (
 	<Container fluid>
 		<Row>
-			<Col md="2" className="d-none d-md-block py-5 border-right site-blue vh-100">
+			<Col md="2" className="d-none d-md-block py-5 border-right site-blue">
 				<SideBar />
 			</Col>
 			<Col>
@@ -33,6 +35,13 @@ function App() {
 						</Offcanvas.Body>
 					</Offcanvas>
 				</div>
+				<Row className="py-3">
+					<Switch>
+						<Route path="/">
+							<Dashboard />
+						</Route>
+					</Switch>
+				</Row>
 			</Col>
 		</Row>
 		<Row className="site-blue p-4 text-light">
