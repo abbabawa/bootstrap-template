@@ -47,7 +47,7 @@ const Dashboard = ()=>{
             </Col>
             <Col md="6" className="mt-4">
                 <Card>
-                    <Card.Body>
+                    <Card.Body className="">
                         <Card.Title className="border-bottom">
                             <h4>Summary</h4>
                         </Card.Title>
