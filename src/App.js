@@ -9,6 +9,7 @@ import SiteFooter from './components/Footer';
 import Dashboard from './pages/Dashboard';
 import SiteForm from './pages/Form';
 import SiteTable from './pages/Table';
+import Staff from './pages/Staff';
 
 let customers = [
 	{
@@ -216,8 +217,191 @@ let customers = [
 	}
 ]
 
+let staff = [
+	{
+		firstName: "Arnold",
+		lastName: "Sam",
+		jobTitle: "CEO",
+		employmentDate: "24th January 1999",
+		img: "arnold",
+		contactInfo: {
+			phone: "08144381928",
+			address: "No 43, old layout Rayfield Jos. Plateau State"
+		},
+		links: {
+			facebook: "fakefb.com/arnoldSam",
+			twitter: "faketweet.com/arnoldSam",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Samuel",
+		lastName: "Philip",
+		jobTitle: "Chief Technology Officer",
+		employmentDate: "24th January 2003",
+		img: "sam",
+		contactInfo: {
+			phone: "08144389928",
+			address: "Beside FGC Zaria road Jos. Plateau State"
+		},
+		links: {
+			facebook: "fakefb.com/arnoldSam",
+			twitter: "faketweet.com/arnoldSam",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Johnson",
+		lastName: "James",
+		jobTitle: "Head of Department",
+		employmentDate: "40th August 1992",
+		img: "johnson",
+		contactInfo: {
+			phone: "08141681928",
+			address: "No 22, Lagos Island, Lagos."
+		},
+		links: {
+			facebook: "fakefb.com/johnson",
+			twitter: "faketweet.com/johnson",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Arya",
+		lastName: "Mercy",
+		jobTitle: "Programmer",
+		employmentDate: "24th March 2004",
+		img: "arya",
+		contactInfo: {
+			phone: "08534381928",
+			address: "Opp fine primary school, Jos. Plateau state."
+		},
+		links: {
+			facebook: "fakefb.com/mercy",
+			twitter: "faketweet.com/mercy",
+			mail: "fakemail.com/mercy"
+		}
+	},
+	{
+		firstName: "Jane",
+		lastName: "Gabriel",
+		jobTitle: "Accountant",
+		employmentDate: "31st October 2001",
+		img: "female",
+		contactInfo: {
+			phone: "08194381928",
+			address: "No 43, old layout Rayfield Jos. Plateau State"
+		},
+		links: {
+			facebook: "fakefb.com/jane",
+			twitter: "faketweet.com/jane",
+			mail: "fakemail.com/jane"
+		}
+	},
+	{
+		firstName: "Johnson",
+		lastName: "James",
+		jobTitle: "Head of Department",
+		employmentDate: "40th August 1992",
+		img: "portrait",
+		contactInfo: {
+			phone: "08141681928",
+			address: "No 22, Lagos Island, Lagos."
+		},
+		links: {
+			facebook: "fakefb.com/johnson",
+			twitter: "faketweet.com/johnson",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Arya",
+		lastName: "Mercy",
+		jobTitle: "Programmer",
+		employmentDate: "24th March 2004",
+		img: "arya",
+		contactInfo: {
+			phone: "08534381928",
+			address: "Opp fine primary school, Jos. Plateau state."
+		},
+		links: {
+			facebook: "fakefb.com/mercy",
+			twitter: "faketweet.com/mercy",
+			mail: "fakemail.com/mercy"
+		}
+	},
+	{
+		firstName: "Samuel",
+		lastName: "Philip",
+		jobTitle: "Chief Technology Officer",
+		employmentDate: "24th January 2003",
+		img: "sam",
+		contactInfo: {
+			phone: "08144389928",
+			address: "Beside FGC Zaria road Jos. Plateau State"
+		},
+		links: {
+			facebook: "fakefb.com/arnoldSam",
+			twitter: "faketweet.com/arnoldSam",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Johnson",
+		lastName: "James",
+		jobTitle: "Head of Department",
+		employmentDate: "40th August 1992",
+		img: "johnson",
+		contactInfo: {
+			phone: "08141681928",
+			address: "No 22, Lagos Island, Lagos."
+		},
+		links: {
+			facebook: "fakefb.com/johnson",
+			twitter: "faketweet.com/johnson",
+			mail: "fakemail.com/arnoldSam"
+		}
+	},
+	{
+		firstName: "Arya",
+		lastName: "Mercy",
+		jobTitle: "Programmer",
+		employmentDate: "24th March 2004",
+		img: "arya",
+		contactInfo: {
+			phone: "08534381928",
+			address: "Opp fine primary school, Jos. Plateau state."
+		},
+		links: {
+			facebook: "fakefb.com/mercy",
+			twitter: "faketweet.com/mercy",
+			mail: "fakemail.com/mercy"
+		}
+	},
+	{
+		firstName: "Jane",
+		lastName: "Gabriel",
+		jobTitle: "Accountant",
+		employmentDate: "31st October 2001",
+		img: "female",
+		contactInfo: {
+			phone: "08194381928",
+			address: "No 43, old layout Rayfield Jos. Plateau State"
+		},
+		links: {
+			facebook: "fakefb.com/jane",
+			twitter: "faketweet.com/jane",
+			mail: "fakemail.com/jane"
+		}
+	}
+]
+
 const getCustomers = ()=>{
 	return customers
+}
+
+const getStaff = ()=>{
+	return staff
 }
 
 function App() {
@@ -262,7 +446,10 @@ function App() {
 						<Route path="/table">
 							<SiteTable getCustomers={getCustomers} />
 						</Route>
-						<Route path="/">
+						<Route path="/staff">
+							<Staff getStaff={getStaff} />
+						</Route>
+						<Route exact path="/">
 							<Dashboard />
 						</Route>
 					</Switch>
