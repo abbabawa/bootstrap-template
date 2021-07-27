@@ -1,28 +1,9 @@
 import {Col, Card, NavLink} from 'react-bootstrap'
+import getImage from '../StaffImages'
 
-//TODO: simulate actual dynamic display of images from a server
-import arnold from '../images/arnold-1.jpg'
-import arya from '../images/arya-1.jpg'
-import female from '../images/female_portrait-1.jpg'
-import johnson from '../images/johnson-1.jpg'
-import sam from '../images/sam-1.jpg'
-import portrait from '../images/portrait-1.jpg'
-
-const StaffCard = (props)=>{
-    let img
-    if(props.img === 'arnold'){
-        img = arnold
-    }else if(props.img === 'arya'){
-        img = arya
-    }else if(props.img === 'female'){
-        img = female
-    }else if(props.img === 'johnson'){
-        img = johnson
-    }else if(props.img === 'sam'){
-        img = sam
-    }else if(props.img === 'portrait'){
-        img = portrait
-    }
+const StaffCard = (props)=>{console.log(getImage)
+    let img = getImage(props.img)
+    
     return <Col md="3" className="my-2 ">
                 <Card className="">
                     <Card.Img variant="top" src={img} alt="my img" className="img staff-card-img rounded-circle mx-auto my-3 border border-dark" />

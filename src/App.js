@@ -10,6 +10,7 @@ import Dashboard from './pages/Dashboard';
 import SiteForm from './pages/Form';
 import SiteTable from './pages/Table';
 import Staff from './pages/Staff';
+import StaffProfile from './pages/StaffProfile';
 
 let customers = [
 	{
@@ -233,7 +234,13 @@ let staff = [
 			facebook: "fakefb.com/arnoldSam",
 			twitter: "faketweet.com/arnoldSam",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 2,
@@ -250,7 +257,13 @@ let staff = [
 			facebook: "fakefb.com/arnoldSam",
 			twitter: "faketweet.com/arnoldSam",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 3,
@@ -267,7 +280,13 @@ let staff = [
 			facebook: "fakefb.com/johnson",
 			twitter: "faketweet.com/johnson",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 4,
@@ -284,7 +303,13 @@ let staff = [
 			facebook: "fakefb.com/mercy",
 			twitter: "faketweet.com/mercy",
 			mail: "fakemail.com/mercy"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 5,
@@ -301,7 +326,13 @@ let staff = [
 			facebook: "fakefb.com/jane",
 			twitter: "faketweet.com/jane",
 			mail: "fakemail.com/jane"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 6,
@@ -318,7 +349,13 @@ let staff = [
 			facebook: "fakefb.com/johnson",
 			twitter: "faketweet.com/johnson",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 7,
@@ -335,7 +372,13 @@ let staff = [
 			facebook: "fakefb.com/mercy",
 			twitter: "faketweet.com/mercy",
 			mail: "fakemail.com/mercy"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 8,
@@ -352,7 +395,13 @@ let staff = [
 			facebook: "fakefb.com/arnoldSam",
 			twitter: "faketweet.com/arnoldSam",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 9,
@@ -369,7 +418,13 @@ let staff = [
 			facebook: "fakefb.com/johnson",
 			twitter: "faketweet.com/johnson",
 			mail: "fakemail.com/arnoldSam"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 10,
@@ -386,7 +441,13 @@ let staff = [
 			facebook: "fakefb.com/mercy",
 			twitter: "faketweet.com/mercy",
 			mail: "fakemail.com/mercy"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	},
 	{
 		id: 11,
@@ -403,7 +464,13 @@ let staff = [
 			facebook: "fakefb.com/jane",
 			twitter: "faketweet.com/jane",
 			mail: "fakemail.com/jane"
-		}
+		},
+		bio: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`
 	}
 ]
 
@@ -413,6 +480,10 @@ const getCustomers = ()=>{
 
 const getStaff = ()=>{
 	return staff
+}
+
+const getStaffProfile = (id)=>{
+	return staff.find(singStaff=>singStaff.id === id)
 }
 
 function App() {
@@ -459,6 +530,9 @@ function App() {
 						</Route>
 						<Route path="/staff">
 							<Staff getStaff={getStaff} />
+						</Route>
+						<Route path="/staff_profile/:id">
+							<StaffProfile getStaffProfile={getStaffProfile} />
 						</Route>
 						<Route exact path="/">
 							<Dashboard />
