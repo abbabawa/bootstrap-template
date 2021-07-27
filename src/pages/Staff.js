@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react"
-import { Card, Col } from "react-bootstrap"
 import StaffCard from "../components/StaffCard"
-
-import img from '../images/arya.jpg'
 
 const Staff = (props)=>{
     const [staff, setStaff] = useState([])
@@ -13,7 +10,7 @@ const Staff = (props)=>{
     return (
         
         staff.map(singStaff=>{//let myimg = require(`http://localhost/dannyvet/images/danny_vet`); console.log(myimg)
-            return <StaffCard img={singStaff.img} />
+            return <StaffCard id={singStaff.id} img={singStaff.img} name={singStaff.firstName+" "+singStaff.lastName} jobTitle={singStaff.jobTitle} />
         })
     )
 }

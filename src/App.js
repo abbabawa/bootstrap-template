@@ -219,6 +219,7 @@ let customers = [
 
 let staff = [
 	{
+		id: 1,
 		firstName: "Arnold",
 		lastName: "Sam",
 		jobTitle: "CEO",
@@ -235,6 +236,7 @@ let staff = [
 		}
 	},
 	{
+		id: 2,
 		firstName: "Samuel",
 		lastName: "Philip",
 		jobTitle: "Chief Technology Officer",
@@ -251,6 +253,7 @@ let staff = [
 		}
 	},
 	{
+		id: 3,
 		firstName: "Johnson",
 		lastName: "James",
 		jobTitle: "Head of Department",
@@ -267,6 +270,7 @@ let staff = [
 		}
 	},
 	{
+		id: 4,
 		firstName: "Arya",
 		lastName: "Mercy",
 		jobTitle: "Programmer",
@@ -283,6 +287,7 @@ let staff = [
 		}
 	},
 	{
+		id: 5,
 		firstName: "Jane",
 		lastName: "Gabriel",
 		jobTitle: "Accountant",
@@ -299,6 +304,7 @@ let staff = [
 		}
 	},
 	{
+		id: 6,
 		firstName: "Johnson",
 		lastName: "James",
 		jobTitle: "Head of Department",
@@ -315,6 +321,7 @@ let staff = [
 		}
 	},
 	{
+		id: 7,
 		firstName: "Arya",
 		lastName: "Mercy",
 		jobTitle: "Programmer",
@@ -331,6 +338,7 @@ let staff = [
 		}
 	},
 	{
+		id: 8,
 		firstName: "Samuel",
 		lastName: "Philip",
 		jobTitle: "Chief Technology Officer",
@@ -347,6 +355,7 @@ let staff = [
 		}
 	},
 	{
+		id: 9,
 		firstName: "Johnson",
 		lastName: "James",
 		jobTitle: "Head of Department",
@@ -363,6 +372,7 @@ let staff = [
 		}
 	},
 	{
+		id: 10,
 		firstName: "Arya",
 		lastName: "Mercy",
 		jobTitle: "Programmer",
@@ -379,6 +389,7 @@ let staff = [
 		}
 	},
 	{
+		id: 11,
 		firstName: "Jane",
 		lastName: "Gabriel",
 		jobTitle: "Accountant",
