@@ -1,5 +1,5 @@
-import {Nav, Image, Figure} from 'react-bootstrap'
-import {HouseFill} from 'react-bootstrap-icons'
+import {Nav, Figure} from 'react-bootstrap'
+import {Box, HouseFill, InputCursorText, People, Table } from 'react-bootstrap-icons'
 import prof from '../images/profile_2.jpg'
 
 const SideBar = ()=>{
@@ -13,10 +13,12 @@ const SideBar = ()=>{
                     John Smith<br/> John@gmail.com
                 </Figure.Caption>
             </Figure>
-            <Nav defaultActiveKey="/home" className="flex-column text-center ">
-                <Nav.Link href="/home" className="text-light"><HouseFill /> Dashboard</Nav.Link>
-                <Nav.Link eventKey="link-1" className="text-light">Products</Nav.Link>
-                <Nav.Link eventKey="link-2" className="text-light">Sales</Nav.Link>
+            <Nav defaultActiveKey="/" className="flex-column ps-3">
+                <Nav.Link href="/" className="text-light"><HouseFill /> Dashboard</Nav.Link>
+                <Nav.Link href="/products" eventKey="link-1" className="text-light"><Box /> Products</Nav.Link>
+                <Nav.Link href="/table" eventKey="link-2" className="text-light"><Table /> Table</Nav.Link>
+                <Nav.Link href="/form" eventKey="link-2" className="text-light"><InputCursorText /> Form</Nav.Link>
+                <Nav.Link href="/Staff" eventKey="link-2" className="text-light"><People /> Staff</Nav.Link>
             </Nav>
         </>
     )

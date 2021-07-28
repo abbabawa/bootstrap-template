@@ -2,12 +2,11 @@ import { useEffect, useState } from "react"
 import { Col } from "react-bootstrap"
 import {useParams} from 'react-router-dom'
 import ProfileImage from "../components/ProfileImage"
-
-import getImage from '../StaffImages'
+import TitleBar from "../components/TitleBar"
 
 const StaffProfile = (props)=>{
     let id = Number(useParams().id)
-    let uimg
+  
     const [profile, setProfile] = useState({
 		id: '',
 		firstName: "",
@@ -33,6 +32,7 @@ const StaffProfile = (props)=>{
         console.log(data)
     }, [])
     return <>
+        <TitleBar title="Staff Profile" />
         <Col md="5" className="text-center border-end">
             <ProfileImage url={profile.img} />
             {/* <img src={uimg} alt="Profile" className="img rounded-circle staff-card-img d-block mx-auto" /> */}

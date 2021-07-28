@@ -1,9 +1,7 @@
-import { useState } from "react"
 import { Button } from "react-bootstrap"
 
 const TableBody = (props)=>{
     let data = props.customers
-    let bodies = []
     let rows = []
     console.log(props)
     for(let i=props.page; (i<props.page + 20) && i < data.length; i++){console.log(props.customers)

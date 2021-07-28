@@ -11,6 +11,7 @@ import SiteForm from './pages/Form';
 import SiteTable from './pages/Table';
 import Staff from './pages/Staff';
 import StaffProfile from './pages/StaffProfile';
+import Products from './pages/Products';
 
 let customers = [
 	{
@@ -474,6 +475,89 @@ let staff = [
 	}
 ]
 
+let saleProducts = [
+	{
+		id: 1,
+		name: "Tablet",
+		price: 15000.00,
+		img: "one",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 2,
+		name: "Green trainers",
+		price: 8500.00,
+		img: "two",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 3,
+		name: "White Tablet",
+		price: 2000.00,
+		img: "three",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 4,
+		name: "Air pods unpacked",
+		price: 1500.00,
+		img: "four",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 5,
+		name: "Air pods",
+		price: 200.00,
+		img: "five",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 6,
+		name: "Tablet and Phone",
+		price: 15000.00,
+		img: "one",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 7,
+		name: "Nike Trainers",
+		price: 8500.00,
+		img: "two",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	},
+	{
+		id: 8,
+		name: "White air pods",
+		price: 200.00,
+		img: "five",
+		description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.`
+	}
+]
+
 const getCustomers = ()=>{
 	return customers
 }
@@ -484,6 +568,15 @@ const getStaff = ()=>{
 
 const getStaffProfile = (id)=>{
 	return staff.find(singStaff=>singStaff.id === id)
+}
+
+const getProducts = ()=>{
+	return saleProducts
+}
+
+const searchProducts = (searchString)=>{
+	let data = saleProducts.filter(product=>product.name.search(searchString) > -1)
+	return data
 }
 
 function App() {
@@ -533,6 +626,9 @@ function App() {
 						</Route>
 						<Route path="/staff_profile/:id">
 							<StaffProfile getStaffProfile={getStaffProfile} />
+						</Route>
+						<Route path="/products">
+							<Products getProducts={getProducts} searchProducts={searchProducts}  />
 						</Route>
 						<Route exact path="/">
 							<Dashboard />
